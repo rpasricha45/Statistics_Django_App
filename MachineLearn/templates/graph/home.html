@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Graph </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static "css/home.css" %}"/>
+
+  </head>
+  <body>
+
+    <!--add the navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-company-blue" >
+  <a class="navbar-brand" href="#" id="anchorcolor">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="anchorcolor">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"id="anchorcolor">Link</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"id="anchorcolor">Disabled</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<!-- add Jumbotron   -->
+
+{% block body_block %}
+
+
+<div class="container">
+  <div class="jumbotron">
+  <h1 class="display-4">Please add your csv file</h1>
+  <p class="lead"> This will return basic stats about your data</p>
+  <hr class="my-4">
+
+  <!-- List of Documents -->
+  {% if documents %}
+  <ul>
+  {% for document in documents %}
+      <!-- <li><a href="{{ document.docfile.url }}">{{document.docfile.name}}</a></li> -->
+  {% endfor %}
+  </ul>
+  {% else %}
+  <p>No Documents</p>
+  {% endif %}
+  <form method="post" enctype="multipart/form-data" >
+  {% csrf_token %}
+  <!-- <p>{{ form.non_field_errors }}</p> -->
+  <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+  <p>
+      {{ form.docfile.errors }}
+      {{ form.docfile }}
+  </p>
+  <p><input type="submit" value="Upload" /></p>
+  </form>
+
+</div>
+</div>
+
+{% endblock %}
+  </body>
+</html>
