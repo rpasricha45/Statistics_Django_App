@@ -1,10 +1,77 @@
 /* style the navbar  */
 
 .bg-company-blue {
-    background-color: #0f4471;
+    background-color:  #FFF;
 }
 /*set the subcatogry colors  */
 
 #anchorcolor{
-  color:white;
+  color:red;
+}
+
+
+
+}
+
+#text{
+  color:grey;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: blue;
+}
+
+footer{
+  background: #1dc9e3;
+  position: relative;
+  /* height:167px; */
+  top:-26px;
+
+
+}
+body{
+  background: #1dc9e3;
+}
+
+#header{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+
+#title{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+
+
+#first{
+  color: #1dc9e3;;
+}
+
+#second{
+  color:#535bd4;
+}
+
+nav{
+  height: 75px;
+}
+
+#jumbo{
+position: relative;
+top: -16px;
+}
+
+#dlbutton{
+    background:#535bd4;
+
+    color:#FFFFFF ;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    display:inline-block;
+    width: 10em;
+    height: 3em;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    left: -23px;
 }

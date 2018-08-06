@@ -19,9 +19,13 @@ from django.conf.urls import include
 from graph import views
 
 urlpatterns = [
-    url(r'^$',views.index,name='index'),
+    url(r'^$',views.home,name='index'),
+    url(r'^statsPage$',views.index,name='index'),
+    url(r'^graph$',views.linearReg,name='lin'),
     url(r'^graph/',include('graph.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^grapher/',views.linearReg, name = "lin"),
+    url(r'^statsPage/grapher/',views.linearReg, name = "lin"),
+    url(r'^home/',views.home, name = "home"),
+
 
 ]

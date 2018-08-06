@@ -24,7 +24,8 @@ import csv,os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # to use for other methods
 
-
+def home (request):
+    return render(request,"index.html")
 
 
 def index(request):

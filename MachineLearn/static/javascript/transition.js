@@ -11,11 +11,14 @@ var button = document.querySelector('#button')
 
 button.addEventListener("click", function() {
   // this redirects url using current url + new Url extension
-  console.log("I am connected")
+
+
   var BASE_URL = window.location.href ;
-   var newUrlExtension = "grapher";
+  concole.log(BASE_URL)
+   var newUrlExtension = "/grapher";
 
   // Redirect
   window.location.replace(BASE_URL+newUrlExtension);
+
 
 })
