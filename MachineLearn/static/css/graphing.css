@@ -1,0 +1,42 @@
+.bg-company-blue {
+    background-color:  #FFF;
+}
+/*set the subcatogry colors  */
+
+#anchorcolor{
+  color:red;
+}
+
+
+
+}
+
+#text{
+  color:grey;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: blue;
+}
+
+#header{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+
+#title{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+
+
+
+
+
+#first{
+  color: #1dc9e3;
+}
+
+#second{
+  color:#535bd4;
+}

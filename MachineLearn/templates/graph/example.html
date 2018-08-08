@@ -7,156 +7,61 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="{% static "css/home.css" %}"/>
+
+<link rel="stylesheet" href="{% static "css/example.css" %}"/>
+<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+
 
 
 
   </head>
   <body>
 
-<style >
-  .stats{
-    position: relative;
-    right:30px;
-    bottom: -88px;
 
-
-  }
-
-  tr{
-    height: 45px;
-    width: 78px;
-    text-align: center;
-  }
-table{
-  position: relative;
-  border: 1px solid black;
-  width: 100%;
-  left:88px;
-  /* top: -650px; */
-
-
-}
-
-
-thead{
-
-}
-
-body{
-  background: #f6f6f6
-  height: 120px;
-}
-
-
-/* SideNavbar  */
-
-
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
-#sidebar {
-    width: 180px;
-    position: relative;
-    top: 0;
-    left: 0;
-    /* height: 340vh; */
-    height: 100vh;
-
-    z-index: 999;
-    background: #fc3c3c;
-    color: white;
-    transition: all 0.3s;
-}
-#text{
-  color:#f6f6f6;
-}
-
-.page-header{
-  text-align: center;
-}
-form{
-
-}
-
-
-</style>
 
 <!--Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-company-blue" >
-  <a class="navbar-brand" href="#" id="anchorcolor">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-company-blue ">
+  <a class="navbar-brand" href="#" id="title"> <span id="first"> Data</span> <span id="second"> Science</span> </a>
+  <ul class="navbar-nav mr-auto">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" id="anchorcolor">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"id="anchorcolor">Link</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"id="anchorcolor">Disabled</a>
-      </li>
-    </ul>
-
-  </div>
-  </nav>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link"id = "header">Home</a>
 
 
-<!-- SideNavbar -->
+    </li>
+
+    <li> <a class="nav-link" id = "header">Data Analytics</a></li>
+    <li> <a class="nav-link"id = "header">Machine Learning </a></li>
+    <li class="nav-item dropdown">
+
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<hr>
 
 
-<div class="wrapper">
-        <!-- Sidebar -->
-        <nav id="sidebar">
 
 
-            <ul class="list-unstyled components" id="g">
-                <h3>Directory</h3>
-                <hr>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"id ="text" >Home</a>
+          <!-- <button type="button" class="btn btn-primary" id = "button">Graph </button> -->
 
-                </li>
-                <li>
-                    <a href="#"id ="text">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" id ="text">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#"id ="text">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#"id ="text">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#"id ="text">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" id ="text">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#"id ="text">Contact</a>
-                </li>
-            </ul>
-        </nav>
+  
+
+
 
 <!-- Content -->
               <div class = "container">
                 <!-- header -->
                 <div class="page-header">
-                <h1>Statistics about your csv File </h1>
+
               </div>
+
+
 
               <!--Table  -->
 
@@ -170,13 +75,30 @@ form{
 
               </div>
 
+  <div class="col-md-3 text-center">
+
           <form  action="index.html" method="post">
             <!-- <button type="button" class="btn btn-primary" id = "button">Graph </button> -->
-            <a class="btn btn-primary" href="/graph" role="button">Graph</a>
+            <a class="btn btn-primary" href="/graph"  id = "button" role="button">Graph</a>
           </form>
+</div>
 
-    </div>
+          <footer>
+          	<div class="container">
+          		<div class="row">
 
+                         <div class="col-md-8 col-sm-6">
+                              <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
+                                   <p>Ronak Pasricha </p>
+
+                              </div>
+                         </div>
+
+
+
+          		</div>
+          	</div>
+          </footer>
 
     <script src="{% static "javascript/transition.js" %}"> </script>
 

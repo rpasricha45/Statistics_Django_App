@@ -1,0 +1,99 @@
+.stats{
+  position: relative;
+  right:30px;
+  bottom: -88px;
+
+
+}
+
+tr{
+  height: 45px;
+  width: 78px;
+  text-align: center;
+}
+table{
+position: relative;
+border: 1px solid black;
+width: 87%;
+left:78px;
+top: -25px;
+
+/* top: -650px; */
+
+
+}
+
+
+.page-header{
+  text-align: center;
+}
+footer{
+  background: #1dc9e3;
+}
+
+
+/* Navbar */
+/* style the navbar  */
+
+.bg-company-blue {
+    background-color:  #FFF;
+}
+/*set the subcatogry colors  */
+
+#anchorcolor{
+  color:red;
+}
+
+
+
+}
+
+#text{
+  color:grey;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: blue;
+}
+
+#header{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+
+#title{
+  font-family: 'Unica One', cursive;
+  color:black;
+}
+h1{
+  background:#1c1c1c;
+  color:white;
+  width: 100%;
+  border-top:  15px solid black;
+  width: 3000px;
+}
+
+body{
+  background: white;
+  width: 100vw;
+}
+
+#first{
+  color: #1dc9e3;
+}
+
+#second{
+  color:#535bd4;
+}
+
+nav{
+  height: 75px;
+}
+hr{
+  height: 55px;
+  background :#1c1c1c
+}
+#button{
+position: relative;
+left: 389px;
+}
