@@ -37,10 +37,10 @@ def index(request):
             newdoc = Document(docfile=request.FILES['docfile'])
             direc = request.FILES['docfile']
             direc = str(direc)
-            direc = "documents/"+ direc
-
-            print("this is the directoroy selected for the initatal view file")
-            print(direc)
+            direc = "documents/documents/"+ direc
+            # # DEBUG:
+            # print("this is the directoroy selected for the initatal view file")
+            # print(direc)
 
 
 
@@ -92,12 +92,17 @@ def linearReg (request):
 
 
     print("this is the directroy for the linerar REg ")
-    fileDirec = listdir("documents")[0]
+    fileDirec = listdir("documents/documents")[0]
+
     print(fileDirec)
     print(" this is the list")
     print(listdir("documents"))
+    # debugging
+    print(fileDirec + " this is the orginal path ")
 
-    fileDirec = "documents/" + fileDirec
+    fileDirec = "documents/documents/" + fileDirec
+
+    print("this is the new path")
     print(fileDirec)
 
     dataset = pd.read_csv(fileDirec)
